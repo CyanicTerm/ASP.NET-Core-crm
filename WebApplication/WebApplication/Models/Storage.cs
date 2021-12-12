@@ -15,10 +15,9 @@ namespace WebApplication.Models
         public string PlateNum { get; set; }
         [Required]
         public string TireDescription { get; set; }
-        [Required]
         public int TireNum { get; set; }
         public string RimDescription { get; set; }
-        public int RimNum { get; set; }
+        public int? RimNum { get; set; }
         public string OverallDescription { get; set; }
 
         //Foreign key for Client
