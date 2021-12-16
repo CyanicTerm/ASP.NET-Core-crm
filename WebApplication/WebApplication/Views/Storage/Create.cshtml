@@ -1,0 +1,50 @@
+﻿@model WebApplication.Models.Storage
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="card mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Dodaj Przechowalnię</h6>
+    </div>
+
+    <form method="post" asp-action="Create" class="row g-3" style="margin:20px">
+        <div class="col-md-6">
+            <label asp-for="Client.PhoneNum" class="form-label"></label>
+            <input asp-for="Client.PhoneNum" class="form-control">
+        </div>
+        <div class="col-md-6">
+            <label asp-for="StorageNum" class="form-label"></label>
+            <input asp-for="StorageNum" class="form-control">
+        </div>
+        <div class="col-12">
+            <label asp-for="PlateNum" class="form-label"></label>
+            <input asp-for="PlateNum" class="form-control">
+        </div>
+        <div class="col-12">
+            <label asp-for="TireDescription" class="form-label"></label>
+            <input asp-for="TireDescription" class="form-control">
+        </div>
+        <div class="col-12">
+            <label asp-for="TireNum" class="form-label"></label>
+            <input asp-for="TireNum" class="form-control">
+        </div>
+        <div class="col-12">
+            <label asp-for="RimDescription" class="form-label"></label>
+            <input asp-for="RimDescription" class="form-control">
+        </div>
+        <div class="col-12">
+            <label asp-for="RimNum" class="form-label"></label>
+            <input asp-for="RimNum" class="form-control">
+        </div>
+        <div class="col-12">
+            <label asp-for="OverallDescription" class="form-label"></label>
+            <input asp-for="OverallDescription" class="form-control">
+        </div>
+
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary" value="create">Dodaj</button>
+        </div>
+    </form>
+</div>
+

@@ -18,6 +18,7 @@ namespace WebApplication.Controllers
 
         public IActionResult Index()
         {
+
             IEnumerable<Storage> objList = _db.Storages;
             return View(objList);
         }
